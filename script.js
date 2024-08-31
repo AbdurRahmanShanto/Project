@@ -32,7 +32,7 @@ function compleatAndPending() {
             }
       });
       let total = counter()
-      heading.textContent = `Total${total} ,  Complete ${compleate}  ,  Pending ${pending}`; 
+      heading.textContent = `Total ${total} ,  Complete ${compleate}  ,  Pending ${pending}`; 
 }
 
 
