@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>To Do List</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body
+class="bg-gradient-to-r from-pink-100 via-purple-100 to-blue-100 flex flex-col items-center h-screen text-[#2C3E50]">
+
+<div class="container flex items-center justify-center ">
+
+      <div
+            class=" w-[90%] text-[14px]  md:text-base md:w-[90%] lg:w-[60%]  flex flex-col justify-center items-center gap-10 bg ">
+            <div class="flex flex-col bg-[#F0F8FF] w-full text-center h-[200px] rounded-lg mt-10 gap-4 shadow-lg">
+                  <h1
+                        class="text-[25px] mt-5 underline font-bold decoration-[#8E44AD] decoration-6 underline-offset-4">
+                        To do list</h1>
+                  <h1 class="heading mt-5 text-base md:text-xl "></h1>
+                  <form>
+                        <input type="text" id="user-input"
+                              class="border-b-2 w-[50%] bg-transparent h-10 border-b-[#7FB3D5] outline-none">
+                        <label for="userinput"></label>
+                        <button
+                              class="task-button bg-[#7FB3D5] pt-2 pb-2 pl-8 pr-8 rounded-[5px] hover:bg-[#A9CCE3] transition-colors duration-300">Add</button>
+                  </form>
+            </div>
+
+            <table class="my-table table-fixed w-full text-center leading-8 rounded-lg shadow-md">
+                  <tr class="bg-[#7FB3D5] text-white">
+                        <th>Num</th>
+                        <th>Task</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                  </tr>
+            </table>
+      </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
