@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+* {
+      font-family: 'Dancing Script', cursive;
+
+}
+
+
+.delete-icon {
+      cursor: pointer;
+      transition: color 0.3s ease;
+}
+
+.delete-icon:hover {
+      color: #f00;
+}
+
+@keyframes rotate {
+      0% {
+            transform: rotate(0);
+      }
+
+      50% {
+            transform: rotateX(10deg);
+      }
+
+      100% {
+            transform: translateX(0);
+      }
+}
+
+
+.edit-iconv {
+      transition: color 0.3s ease;
+      cursor: pointer;
+}
+
+.edit-icon:hover {
+      color: #3b8dd4;
+}
+
