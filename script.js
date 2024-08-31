@@ -2,10 +2,12 @@
 
 let userinput = document.querySelector('#user-input');
 let taskbutton = document.querySelector('.task-button');
+let exportbutton  = document.querySelector('.Export-button')
 let table = document.querySelector('.my-table');
 let heading = document.querySelector('.heading')
 let tr = document.createElement('tr');
 let count = 1;
+
 
 function counter()  {
       let row = document.querySelectorAll('tr');
@@ -116,3 +118,23 @@ taskbutton.addEventListener('click', (event) => {
             userinput.value = '';
       }
 });
+
+
+function exportTablel()  {
+      let table_row = Array.from(table.querySelectorAll('tr'));
+      let csvTd = table_row.map(row => {
+            let table_colum = Array.from(row.querySelectorAll('td'));
+            return table_colum.map(cols => cols.textContent).join( ' , ')
+      }).join('\n');
+
+      let link = document.createElement('a') ;
+      link.href = URL.createObjectURL(new Blob([csvTd] , {type: 'text/csv'}));
+
+      link.download = 'to-do-list.csv';
+      link.style.display = 'none'
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link)
+}
+
+exportbutton.addEventListener('click' , exportTablel)

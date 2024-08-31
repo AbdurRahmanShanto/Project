@@ -8,13 +8,14 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body
 class="bg-gradient-to-r from-pink-100 via-purple-100 to-blue-100 flex flex-col items-center h-screen text-[#2C3E50]">
 
 <div class="container flex items-center justify-center ">
+
 
       <div
             class=" w-[90%] text-[14px]  md:text-base md:w-[90%] lg:w-[60%]  flex flex-col justify-center items-center gap-10 bg ">
@@ -24,11 +25,14 @@ class="bg-gradient-to-r from-pink-100 via-purple-100 to-blue-100 flex flex-col i
                         To do list</h1>
                   <h1 class="heading mt-5 text-base md:text-xl "></h1>
                   <form>
-                        <input type="text" id="user-input"
-                              class="border-b-2 w-[50%] bg-transparent h-10 border-b-[#7FB3D5] outline-none">
+                        <input type="text" id="user-input" class="border-b-2 w-[50%] bg-transparent h-10 border-b-[#7FB3D5] outline-none focus:border-b-[#A9CCE3] transition duration-300 transform focus:scale-105 focus:shadow-md focus:placeholder-opacity-50 placeholder-gray-400 placeholder-opacity-70 focus:outline-none">
                         <label for="userinput"></label>
-                        <button
-                              class="task-button bg-[#7FB3D5] pt-2 pb-2 pl-8 pr-8 rounded-[5px] hover:bg-[#A9CCE3] transition-colors duration-300">Add</button>
+                        <button class="task-button bg-[#7FB3D5] pt-2 pb-2 pl-8 pr-8 rounded-[5px] hover:bg-[#FBDBD4] transition duration-300 transform hover:scale-105 hover:shadow-lg hover:rotate-2 active:scale-95 active:shadow-md">
+                              Add
+                        </button>
+                        <button class="Export-button bg-[#7FB3D5] pt-2 pb-2 pl-4 pr-4 rounded-[5px] hover:bg-[#FBDBD4] transition duration-300 transform hover:scale-105 hover:shadow-lg hover:rotate-2 active:scale-95 active:shadow-md ">
+                              <i class="fa-solid fa-file-export"></i>
+                        </button>
                   </form>
             </div>
 
